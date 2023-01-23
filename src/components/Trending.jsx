@@ -17,7 +17,7 @@ const Trending = () => {
         const fetchTrending = async () => {
         
             try {
-                const { data } = await axios.get(`${server}/search/trending?vs_currency=inr`);
+                const { data } = await axios.get(`${server}/search/trending`);
                 setTrending(data);
                 setLoading(false);
                 console.log(data);
