@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Box bgColor={"blackAlpha.700"} w={"full"} h={"90vh"}>
         <Image w={"full"} h={"full"} objectFit={"contain"} src={btcSrc} />
-        <Text fontSize={"5xl"} textAlign={"center"} fontWeight={"bold"} color={"blackAlpha.700"} mt={"-20"}>Crypto'ed</Text>
+        <Text fontSize={"5xl"} textAlign={"center"} fontWeight={"bold"} color={"whiteAlpha.700"} mt={"-20"}>Crypto'ed</Text>
     </Box>
   )
 }
