@@ -6,6 +6,7 @@ import Coin from "./components/Coin";
 import Exchanges from "./components/Exchanges";
 import Trending from "./components/Trending";
 import Footer from "./components/Footer";
+import Featured from "./components/Featured";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
 
         <Header/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<><Home /><Featured /></>} />
+          <Route path="/featured" element={<Featured />} />
           <Route path="/coins" element={<Coin />} />
           <Route path="/exchanges" element={<Exchanges />} />
           <Route path="/coins/:id" element={<CoinDetails />} />
