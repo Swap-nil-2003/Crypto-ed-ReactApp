@@ -15,7 +15,7 @@ const Footer = () => {
             fontSize={"sm"}
             letterSpacing={"widest"}
             textAlign={["center"]}>
-            Get all details about the Crypto MarketPlace and latest trends about various Bitcoins.
+            Get all details about the Crypto MarketPlace and latest trends about various Cryptocurrencies.
           </Text>
         </VStack>
       </Stack>
