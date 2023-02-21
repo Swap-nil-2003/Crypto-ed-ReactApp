@@ -10,12 +10,18 @@ const Footer = () => {
     py={["16", "8"]}>
     <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
         <VStack w={"100vw"} alignItems={["center"]}>
-          <Text fontWeight={"bold"} fontSize={"3xl"}>About Crypto'ed</Text>
+          <Text fontWeight={"bold"} fontSize={"3xl"}>About Us</Text>
           <Text
             fontSize={"sm"}
             letterSpacing={"widest"}
             textAlign={["center"]}>
             Get all details about the Crypto MarketPlace and latest trends about various Cryptocurrencies.
+          </Text>
+          <Text
+            fontSize={"sm"}
+            letterSpacing={"widest"}
+            textAlign={["center"]}>
+            <p class="footer-p">©CODER:404 All rights reserved 2023</p>
           </Text>
         </VStack>
       </Stack>
