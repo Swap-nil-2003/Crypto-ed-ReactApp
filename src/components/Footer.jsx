@@ -17,6 +17,12 @@ const Footer = () => {
             textAlign={["center"]}>
             Get all details about the Crypto MarketPlace and latest trends about various Cryptocurrencies.
           </Text>
+          <Text
+            fontSize={"sm"}
+            letterSpacing={"widest"}
+            textAlign={["center"]}>
+            <p class="footer-p">©CODER:404 All rights reserved 2023</p>
+          </Text>
         </VStack>
       </Stack>
     </Box>
