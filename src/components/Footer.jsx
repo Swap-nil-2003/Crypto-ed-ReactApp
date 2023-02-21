@@ -10,7 +10,7 @@ const Footer = () => {
     py={["16", "8"]}>
     <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
         <VStack w={"100vw"} alignItems={["center"]}>
-          <Text fontWeight={"bold"} fontSize={"3xl"}>About Us</Text>
+          <Text fontWeight={"bold"} fontSize={"3xl"}>About Crypto'ed</Text>
           <Text
             fontSize={"sm"}
             letterSpacing={"widest"}
