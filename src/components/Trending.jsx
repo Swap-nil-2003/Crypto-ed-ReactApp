@@ -10,14 +10,12 @@ const Trending = () => {
     const [trending, setTrending] = useState([]);
     const[loading, setLoading] = useState(true);
     const[error, setError] = useState(false);
-    //const [page, setPage] = useState(1);
-    //const [currency, setCurrency] = useState("inr");
 
     useEffect(() => {
         const fetchTrending = async () => {
         
             try {
-                const { data } = await axios.get(`${server}/search/trending`);
+                const { data } = await axios.get(`${server}/search/trending?vs_currency=inr`);
                 setTrending(data);
                 setLoading(false);
                 console.log(data);
@@ -36,7 +34,7 @@ const Trending = () => {
         {loading ? <Loader /> : <>
             <Heading m={"5"}>Top 7 Trending Coins</Heading>
             
-            <HStack wrap={"wrap"}>
+            <HStack wrap={"wrap"} justifyContent={"space-evenly"}>
                 {trending.coins.map((i) => (
                     //<div>{i.item.name}</div>
                     <TrendingCard key={i.item.id} nme={i.item.name} img={i.item.small} rank={i.item.market_cap_rank} price={i.item.price_btc} />
